@@ -5,9 +5,6 @@ var btn = document.getElementById('button');
 function goclear() { 
 document.location.href = "clear.php";
 };
-setTimeout(function(){
-   window.location.reload(1);
-}, 10000);
 </script>
 <?php 
     include($_SERVER['DOCUMENT_ROOT']."config.php");
