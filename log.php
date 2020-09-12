@@ -10,7 +10,7 @@ setTimeout(function(){
 }, 10000);
 </script>
 <?php 
-    include 'config.php';
+    include($_SERVER['DOCUMENT_ROOT']."config.php");
     $content="<code><pre><h2>log.txt</h2>".htmlspecialchars(file_get_contents($save_file))."</pre></code>";
     echo $content;
 ?>
