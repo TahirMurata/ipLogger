@@ -6,8 +6,8 @@ function goclear() {
 document.location.href = "clear.php";
 };
 </script>
+<?php include('config.php'); ?>
 <?php 
-    include($_SERVER['DOCUMENT_ROOT']."config.php");
     $content="<code><pre><h2>log.txt</h2>".htmlspecialchars(file_get_contents($save_file))."</pre></code>";
     echo $content;
 ?>
