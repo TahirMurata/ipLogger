@@ -13,7 +13,7 @@
     {
         $ip = $_SERVER['REMOTE_ADDR'];
     }
-        date_default_timezone_set($timezone);
+        date_default_timezone_set(Asia/Tokyo);
         $date = date('Y-m-d H:i:s');
         $line_break = "\r\n";
         $file = $save_file;
