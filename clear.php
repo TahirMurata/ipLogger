@@ -3,11 +3,8 @@
         <meta http-equiv="refresh" content="0.1;url=../log.php" />
 </head>
 <?php
-include 'config.php';
-//open file to write
+include($_SERVER['DOCUMENT_ROOT']."config.php");
 $fp = fopen($file_save, "r+");
-// clear content to 0 bits
 ftruncate($fp, 0);
-//close file
 fclose($fp);
 ?>
