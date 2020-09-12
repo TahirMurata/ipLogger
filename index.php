@@ -1,5 +1,6 @@
 <?php
 /* START IP LOGGER */
+    include 'config.php';
       if (!empty($_SERVER['HTTP_CLIENT_IP']))
     {
         $ip = $_SERVER['HTTP_CLIENT_IP'];
@@ -12,7 +13,7 @@
     {
         $ip = $_SERVER['REMOTE_ADDR'];
     }
-        date_default_timezone_set(Asia/Tokyo);
+        date_default_timezone_set($timezone);
         $date = date('Y-m-d H:i:s');
         $line_break = "\r\n";
         $file = $save_file;
