@@ -16,8 +16,7 @@
         date_default_timezone_set($timezone);
         $date = date('Y-m-d H:i:s');
         $line_break = "\r\n";
-        $file = $save_file;
-        $fp = fopen($file, 'a');
+        $fp = fopen($save_file, 'a');
         fwrite($fp, $line_break);
         fwrite($fp, $ip . $line_break);
         fwrite($fp, $date . $line_break);
