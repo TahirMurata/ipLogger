@@ -4,7 +4,7 @@
 </head>
 <?php
 include($_SERVER['DOCUMENT_ROOT']."config.php");
-$fp = fopen($file_save, "r+");
+$fp = fopen($save_file, "r+");
 ftruncate($fp, 0);
 fclose($fp);
 ?>
