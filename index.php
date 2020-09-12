@@ -22,6 +22,5 @@
         fwrite($fp, $date . $line_break);
         fwrite($fp, "--------------------");      
         fclose($fp);
-     echo $hi
 /* END IP LOGGER */
 ?>
