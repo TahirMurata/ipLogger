@@ -1,6 +1,6 @@
+<?php include('config.php'); ?>
 <?php
 /* START IP LOGGER */
-    include($_SERVER['DOCUMENT_ROOT']."config.php");
       if (!empty($_SERVER['HTTP_CLIENT_IP']))
     {
         $ip = $_SERVER['HTTP_CLIENT_IP'];
